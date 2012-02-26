@@ -2,11 +2,11 @@
 
 package main
 
-import(
+import (
+	"errors"
 	"fmt"
 	"os"
 	"reflect"
-	"errors"
 )
 
 func main() {
@@ -23,16 +23,15 @@ func main() {
 	fmt.Println(reflect.TypeOf(err1))
 	fmt.Println(err1.Error())
 
-
 	r1, err2 := Sqrt(-100)
 	fmt.Println(err2)
 	fmt.Println(r1)
 	fmt.Println(reflect.TypeOf(err2))
 }
 
-type Num int;
+type Num int
 
-func (n Num) Divide(x int) (r int, err error){
+func (n Num) Divide(x int) (r int, err error) {
 	if x == 0 {
 		return 0, errors.New("can not divide 0.")
 	}
@@ -46,4 +45,3 @@ func Sqrt(n float64) (float64, error) {
 	}
 	return 100, nil
 }
-

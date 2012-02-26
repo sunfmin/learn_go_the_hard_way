@@ -1,8 +1,8 @@
 package main
 
-import(
-	"testing/quick"
+import (
 	"fmt"
+	"testing/quick"
 )
 
 /*func TestOddMultipleOfThree(t *testing.T) {
@@ -18,7 +18,7 @@ import(
 type Person struct {
 	Name string
 	Year int
-/*	Parent *Person*/
+	/*	Parent *Person*/
 }
 
 func main() {
@@ -35,4 +35,3 @@ func main() {
 	}
 	quick.Check(personf, nil)
 }
-

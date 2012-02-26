@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 	"reflect"
 	"unsafe"
@@ -29,7 +29,7 @@ func main() {
 	fmt.Println("h address variable's address: ", &hAddress2)
 	fmt.Println("equal: ", *hAddress == h)
 	fmt.Println("unsafe.Pointer: ", hAddressLiteral)
-/*	fmt.Println("equal: ", *hAddressLiteral)*/
+	/*	fmt.Println("equal: ", *hAddressLiteral)*/
 
 	m := "Lv"
 	m1 := &m
@@ -38,6 +38,5 @@ func main() {
 	m4 := &m3
 	m5 := &m4
 	fmt.Println("addresses: ", m1, m2, m3, m4, m5)
-
 
 }

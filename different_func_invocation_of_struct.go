@@ -1,5 +1,6 @@
 package main
-import(
+
+import (
 	"fmt"
 )
 
@@ -7,10 +8,9 @@ type Man struct {
 	Name string
 }
 
-
 func (h Man) Follow(who ...string) {
 	fmt.Printf("%s just followed: \n", h.Name)
-	for _, v := range(who) {
+	for _, v := range who {
 		fmt.Println(v)
 	}
 }

@@ -1,6 +1,6 @@
 package execution
 
-import(
+import (
 	"fmt"
 )
 
@@ -10,4 +10,8 @@ func init() {
 
 func init() {
 	fmt.Println("second init in execution/second.go")
+}
+
+func Hello() {
+	fmt.Println("Hello")
 }

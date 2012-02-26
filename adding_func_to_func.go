@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 	"reflect"
 )
@@ -11,7 +11,6 @@ func (m5 Multi5) Print(input string) {
 	fmt.Println(m5(input))
 }
 
-
 func multi5(input string) string {
 	return input + input + input + input + input
 }
@@ -21,4 +20,3 @@ func main() {
 	fmt.Println(reflect.TypeOf(m))
 	m.Print("hi")
 }
-

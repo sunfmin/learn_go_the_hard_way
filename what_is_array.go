@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 	"reflect"
 )
@@ -22,7 +22,6 @@ func main() {
 	Change2(s)
 	fmt.Println(b[0])
 	fmt.Println(reflect.TypeOf(s))
-
 
 	Change2(a[:])
 	fmt.Println(a[0])

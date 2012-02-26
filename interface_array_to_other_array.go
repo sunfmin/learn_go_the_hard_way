@@ -1,5 +1,6 @@
 package main
-import(
+
+import (
 	"fmt"
 	"reflect"
 )
@@ -15,9 +16,9 @@ func main() {
 	fmt.Println(reflect.TypeOf(mapArray))
 
 	var newMapArray []map[string]interface{}
-/*	newMapArray = mapArray*/
-/*	newMapArray = []map[string]interface{}(mapArray)*/
-	for _, v := range(mapArray) {
+	/*	newMapArray = mapArray*/
+	/*	newMapArray = []map[string]interface{}(mapArray)*/
+	for _, v := range mapArray {
 		mapValue, ok := v.(map[string]interface{})
 		if ok {
 			newMapArray = append(newMapArray, mapValue)
@@ -28,4 +29,3 @@ func main() {
 	fmt.Println(reflect.TypeOf(newMapArray))
 
 }
-

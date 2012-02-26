@@ -1,15 +1,15 @@
 package main
 
-import(
+import (
 	"fmt"
 	"reflect"
-/*	"unsafe"*/
+	/*	"unsafe"*/
 )
 
 func main() {
 	m := "Lv"
 
-/*	var mAddress *string*/
+	/*	var mAddress *string*/
 
 	m1 := &m
 	mAddress := &m1
@@ -17,6 +17,5 @@ func main() {
 		mAddress1 := &mAddress
 		fmt.Println("address's address type: ", reflect.TypeOf(mAddress1))
 	}
-
 
 }
