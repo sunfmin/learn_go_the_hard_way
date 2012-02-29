@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 	"reflect"
 )
@@ -8,8 +8,6 @@ import(
 type User struct {
 	Name string
 }
-
-
 
 func (u *User) Hello() {
 	fmt.Println("Hello", u.Name)
