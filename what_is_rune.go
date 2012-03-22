@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	nameInBytes := bytes.NewBufferString("sunäあ孙")
+	nameInBytes := bytes.NewBufferString("sunäあ孙♥")
 
 	fmt.Println(nameInBytes.Bytes())
 	fmt.Println(bytes.Runes(nameInBytes.Bytes()))
@@ -20,5 +20,5 @@ func main() {
 	}
 
 	fmt.Printf("~m~%d~m~~j~%s\n", 10, "sunäあ孙")
-
+	fmt.Println("len of sunäあ孙 is", len("sunäあ孙"))
 }
