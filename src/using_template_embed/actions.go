@@ -1,8 +1,8 @@
-package using_template
+package using_template_embed
 
 import (
 	"net/http"
-	"using_template/templates"
+	"using_template_embed/templates"
 )
 
 func Hello(w http.ResponseWriter, r *http.Request) {

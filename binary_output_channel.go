@@ -7,18 +7,29 @@ import (
 
 func main() {
 	c := make(chan int)
-	go func() {
-		for {
+	for i := 0; i < 1000; i++ {
+		go func() {
+			for {
+				select {
+				case c <- 1:
+				case c <- 0:
+				}
+			}
+		}()
 
-			fmt.Print(<-c)
-		}
-	}()
+		go func() {
+			for {
+
+				select {
+				case c <- 3:
+				case c <- 4:
+				}
+			}
+		}()
+	}
 
 	for {
-		select {
-		case c <- 1:
-		case c <- 0:
-		}
+		fmt.Print(<-c)
 	}
 
 }
