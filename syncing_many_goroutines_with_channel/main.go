@@ -1,11 +1,11 @@
 // http://rouninurashima.wordpress.com/2012/01/18/17/
-package syncing_many_goroutines_with_channel
+package main
 
 import (
 	"fmt"
 )
 
-func ExampleRun() {
+func main() {
 	c := make(chan int)
 	for i := 0; i < 1000; i++ {
 		go func() {
