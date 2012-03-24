@@ -1,5 +1,4 @@
-### Setup you go path
-`export GOPATH=other-go-path:the-dir-to/learn-go-the-hard-way`
+### Documentation
 
-### Run samples
-`go run package_execution.go`
+http://gopkgdoc.appspot.com/pkg/github.com/sunfmin/learn_go_the_hard_way
+
