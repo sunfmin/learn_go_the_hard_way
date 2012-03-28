@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"encoding/base64"
 	"fmt"
 )
 
@@ -13,6 +14,13 @@ func main() {
 	fmt.Println(`So in hex: `, "\n\t", fmt.Sprintf("% x", h))
 	hex := fmt.Sprintf("%x", h)
 	fmt.Println(`So you see this form a lot:`, "\n\t", hex)
+
+	buffer := new(bytes.Buffer)
+	encoder := base64.NewEncoder(base64.URLEncoding, buffer)
+	encoder.Write(h)
+	encoder.Close()
+
+	fmt.Println(`And base64 of the same data:`, "\n\t", buffer.String())
 
 	var bs []byte
 	fmt.Sscanf(hex, "%x", &bs)
