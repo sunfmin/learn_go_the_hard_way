@@ -1,4 +1,4 @@
-package top
+package main
 
 type taobaoMap map[string]interface{}
 
